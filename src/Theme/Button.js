@@ -10,12 +10,7 @@ export default Button = props => (
     onPress={props.onPress ? props.onPress : null}
     style={({ pressed }) => ({ backgroundColor: pressed ? '#ddd' : '#0f0' })}
   >
-    <Text style={[
-      styles.text,
-      props.style
-    ]}>
-      {props.children}
-    </Text>
+    {props.children}
   </Pressable>
 )
 

@@ -4,13 +4,17 @@ import {
     View, 
     Text,
 } from 'react-native'
+import { useDispatch, } from 'react-redux'
+import { getProducts, } from '../Redux/actions/productActions'
 import { displayName, } from '../../app.json'
 
 export default ({ navigation, }) => {
+  const dispatch = useDispatch()
 
   useEffect(() => {
+    dispatch(getProducts())
     setTimeout(() => {
-      navigation.replace('Home')
+      navigation.replace('App')
     }, 2000)
   })
 

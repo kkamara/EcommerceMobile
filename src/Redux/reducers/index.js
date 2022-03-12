@@ -1,7 +1,7 @@
 import React from 'react'
 import { combineReducers, } from 'redux'
-import cityReducer from './cityReducer'
+import productReducer from './productReducer'
 
 export default combineReducers({ 
-  cities: cityReducer,
+  products: productReducer,
 })
