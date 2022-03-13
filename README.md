@@ -11,7 +11,7 @@
 
 # EcommerceMobile
 
-(Planning) Build with react native.
+Build with react native.
 
 ## To run locally
 
