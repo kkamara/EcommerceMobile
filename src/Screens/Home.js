@@ -63,13 +63,13 @@ export default function({ navigation, }) {
                   </View>
                   <View style={[styles.productCardView, styles.bottomProductCard,]}>
                     <Text  style={styles.review}>
-                      {'0.00' !== item.review ? `Review: ${item.review}` : null}
+                      {'0.00' !== item.review ? `Rated ${item.review}` : null}
                     </Text>
                     <Text 
                       style={styles.basketIconContainer} 
                       variant='h6'
                     >
-                      <Icon name='tablet' style={styles.basketIcon}  />
+                      <Icon name='add-shopping-cart' style={styles.basketIcon}  />
                     </Text>
                   </View>
                 </>
